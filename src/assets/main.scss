@@ -1,0 +1,42 @@
+@import './base.sass';
+
+nav {
+  display: flex;
+  padding: 23px 141px 21px 141px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-primary {
+  background-color: $color-primary !important;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-secondary {
+  color: $color-secondary !important;
+}
+
+.text-violet-body {
+  color: #9fa8da;
+}
+
+.el-divider {
+  margin: 0 !important;
+}
+
+sup.el-badge__content.el-badge__content--primary {
+  background-color: #e565a5;
+}
+
+button.el-carousel__arrow.el-carousel__arrow--left,
+button.el-carousel__arrow.el-carousel__arrow--right {
+  height: 100%;
+  border-radius: 5px;
+  // display: block !important;
+  color: blue;
+  font-size: 26px;
+  font-weight: bold;
+}
