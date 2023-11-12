@@ -11,6 +11,9 @@ declare module 'vue' {
     BannerComponent: typeof import('./src/components/BannerComponent.vue')['default']
     CardOportunities: typeof import('./src/components/CardOportunities.vue')['default']
     CarouselOportunities: typeof import('./src/components/CarouselOportunities.vue')['default']
+    CustomBadgeComponent: typeof import('./src/components/CustomBadgeComponent.vue')['default']
+    CustomListComponent: typeof import('./src/components/CustomListComponent.vue')['default']
+    CustomSeparatorComponent: typeof import('./src/components/CustomSeparatorComponent.vue')['default']
     CustomTab: typeof import('./src/components/CustomTab.vue')['default']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElBadge: typeof import('element-plus/es')['ElBadge']
@@ -32,9 +35,12 @@ declare module 'vue' {
     ListComponent: typeof import('./src/components/ListComponent.vue')['default']
     NavComponent: typeof import('./src/components/NavComponent.vue')['default']
     PercentComponent: typeof import('./src/components/PercentComponent.vue')['default']
+    ProfileComponent: typeof import('./src/components/ProfileComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SideBarComponent: typeof import('./src/components/SideBarComponent.vue')['default']
+    SummaryCompanyComponent: typeof import('./src/components/SummaryCompanyComponent.vue')['default']
+    TitleComponent: typeof import('./src/components/TitleComponent.vue')['default']
     VideoComponent: typeof import('./src/components/VideoComponent.vue')['default']
   }
 }

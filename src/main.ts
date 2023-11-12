@@ -1,4 +1,6 @@
 import './assets/main.scss'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
@@ -15,9 +17,22 @@ import {
   faPersonRays,
   faPhotoFilm,
   faUserPlus,
-  faShareNodes
+  faShareNodes,
+  faBrain,
+  faPaperclip,
+  faScrewdriverWrench,
+  faLanguage,
+  faList,
+  faBriefcase
 } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope, faBell, faEye, faAddressCard } from '@fortawesome/free-regular-svg-icons'
+import {
+  faEnvelope,
+  faBell,
+  faEye,
+  faAddressCard,
+  faComments,
+  faUser
+} from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faInstagram, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import { createApp } from 'vue'
@@ -45,7 +60,15 @@ library.add(
   faEye,
   faAddressCard,
   faUserPlus,
-  faShareNodes
+  faShareNodes,
+  faBrain,
+  faPaperclip,
+  faScrewdriverWrench,
+  faLanguage,
+  faList,
+  faBriefcase,
+  faComments,
+  faUser
 )
 
 const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
@@ -55,5 +78,6 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 }
 
 app.use(router)
+app.use(ElementPlus)
 
 app.mount('#app')

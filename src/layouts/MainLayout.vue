@@ -6,13 +6,12 @@
 
     <!-- Contenido principal -->
     <div class="container mx-auto flex">
+      <!-- SideBar -->
       <side-bar-component />
 
       <div class="main-content w-full">
         <div class="grid grid-flow-row auto-rows-max p-5 gap-y-5">
-          <percent-component />
-          <custom-tab />
-          <div>03</div>
+          <RouterView></RouterView>
         </div>
       </div>
     </div>
@@ -20,13 +19,8 @@
 </template>
 
 <script lang="ts" setup>
-import {
-  NavComponent,
-  BannerComponent,
-  SideBarComponent,
-  PercentComponent,
-  CustomTab
-} from '../components/'
+import { RouterView } from 'vue-router'
+import { NavComponent, BannerComponent, SideBarComponent } from '../components/'
 </script>
 <style scoped lang="scss">
 .banner {

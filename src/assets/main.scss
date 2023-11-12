@@ -40,3 +40,32 @@ button.el-carousel__arrow.el-carousel__arrow--right {
   font-size: 26px;
   font-weight: bold;
 }
+
+.text-title {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 21.25px */
+  letter-spacing: 0.5px;
+}
+
+.text-subtitle {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.text-body {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.5px;
+}
+
+.custom-card {
+  border-radius: 10px;
+  border: 1px solid #e8eaf6;
+}

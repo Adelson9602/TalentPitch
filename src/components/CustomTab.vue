@@ -1,6 +1,8 @@
 <template>
   <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-    <el-tab-pane label="Perfil" name="profile">Perfil</el-tab-pane>
+    <el-tab-pane label="Perfil" name="profile">
+      <profile-component />
+    </el-tab-pane>
     <el-tab-pane label="Vacantes" name="oportunities">
       <h1 class="text-secondary">Publicadas recientemente</h1>
       <carousel-oportunities />
@@ -14,7 +16,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import type { TabsPaneContext } from 'element-plus'
-import { CarouselOportunities } from '.'
+import { CarouselOportunities, ProfileComponent } from '.'
 
 const activeName = ref('profile')
 
@@ -26,7 +28,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 @import '../assets/main.scss';
 
 .demo-tabs > .el-tabs__content {
-  padding: 32px;
+  padding: 5px;
   color: #6b778c;
   font-size: 32px;
   font-weight: 600;

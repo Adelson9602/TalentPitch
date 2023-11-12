@@ -2,11 +2,12 @@
   <div class="flex">
     <div class="w-2/3 self-center">
       <div class="flex">
-        <div class="w-1/4 text-violet-body font-medium">
+        <div class="text-violet-body font-medium">
           <span>Match con la cultura</span>
-          <span> {{ percent }} % </span>
+          &nbsp;
+          <span> {{ percent }}% </span>
         </div>
-        <div class="w-3/4 self-center">
+        <div class="self-center ml-2">
           <div class="w-96">
             <el-progress :percentage="percent" :stroke-width="15" color="#67C23A">
               {{ '' }}
